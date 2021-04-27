@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage("Git Checkout"){
+            steps{
+               git credentialsId: '24dca17b-98d9-49b3-b7fa-26a8a02af0b9', url: 'https://github.com/Malli120391/Test.git'
+            }
+        }
+    }
+}
